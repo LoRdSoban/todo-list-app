@@ -61,10 +61,7 @@ const App = () => {
           {/* Header Section */}
           <div className="bg-white/20 backdrop-blur-sm rounded-lg p-4 mb-4 shadow-lg border border-white/30">
             <div className="flex items-center justify-between">
-              <div className="flex items-center space-x-2">
-               
                 <span className="text-white font-medium">To do today</span>
-              </div>
               <div className="w-4 h-4 border-2 border-white/50 border-l-0 border-t-0 rotate-45 transform"></div>
             </div>
           </div>
