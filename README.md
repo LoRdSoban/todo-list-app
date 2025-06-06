@@ -16,6 +16,7 @@ A full-stack Todo List application built with React (Vite) for the frontend and 
 
 - [Node.js](https://nodejs.org/) (v16 or newer recommended)
 - [npm](https://www.npmjs.com/) (comes with Node.js)
+- [Docker](https://www.docker.com/) (for containerized setup, optional)
 
 ---
 
@@ -68,15 +69,37 @@ npm run dev
 
 ---
 
-### 4. Running Tests (Frontend)
+### 4. Running Tests
+
+#### Frontend Tests
 
 ```sh
 cd frontend
 npx vitest
 ```
 
+#### Backend Tests
+
+```sh
+cd backend
+npm test
+```
+
 ---
 
+### 5. Dockerized Setup (Optional)
+
+You can run the entire stack using Docker and Docker Compose:
+
+```sh
+docker-compose up --build
+```
+
+- Frontend: [http://localhost:5173](http://localhost:5173)
+- Backend: [http://localhost:5000](http://localhost:5000)
+- MongoDB: [localhost:27017](mongodb://localhost:27017)
+
+---
 
 ## License
 
