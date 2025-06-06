@@ -19,7 +19,7 @@ const TaskList = ({ tasks, loading, onToggle, onDelete, openDropdown, onToggleDr
   }
 
   return (
-    <div className="space-y-2">
+    <div className="space-y-2 max-h-96 overflow-y-auto transparent-scrollbar">
       {tasks.map((task) => (
         <TaskItem
           key={task._id}
@@ -34,4 +34,4 @@ const TaskList = ({ tasks, loading, onToggle, onDelete, openDropdown, onToggleDr
   );
 };
 
-export default TaskList; 
+export default TaskList;

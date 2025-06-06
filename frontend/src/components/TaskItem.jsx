@@ -5,6 +5,7 @@ import DropdownMenu from './DropdownMenu';
 const TaskItem = ({ task, onToggle, onDelete, openDropdown, onToggleDropdown }) => {
   return (
     <div 
+      onMouseLeave={() => onToggleDropdown(null)}
       className="bg-white rounded-lg p-4 shadow-lg border border-white/30 group hover:bg-neutral-200 transition-colors"
     >
       <div className="flex items-center justify-between">
